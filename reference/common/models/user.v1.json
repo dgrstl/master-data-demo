@@ -1,6 +1,9 @@
 {
   "title": "User",
   "type": "object",
+  "x-tags": [
+    "Models"
+  ],
   "properties": {
     "name": {
       "type": "string",
@@ -11,13 +14,16 @@
       "format": "double",
       "minimum": 0,
       "maximum": 150
+    },
+    "givenname": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
     }
   },
   "required": [
     "name",
     "age"
-  ],
-  "x-tags": [
-    "Models"
   ]
 }
